@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pypolls"
+version = "0.1.0"
+description = ""
+authors = ["Finlay Wojtan <finlaywojtan@hotmail.co.uk>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+polars = "^1.2.1"
+requests = "^2.32.3"
+
+
+[tool.poetry.group.dev.dependencies]
+maturin = "^1.7.0"
+
+[tool.poetry.scripts]
+scrape = "pypolls.main:scrape"
+try = "pypolls.main:tryout"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
